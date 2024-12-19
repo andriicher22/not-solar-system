@@ -121,8 +121,8 @@ const planets = {
 };
 
 //Adding event listeners and adding object ot scene
-for (const [name, planet] of Object.entries(planets))  {
-  interactionManager.add(planet.meshObject)
+for (const [name, planet] of Object.entries(planets)) {
+  interactionManager.add(planet.meshObject);
   scene.add(planet.meshObject, planet.axisLine);
   planet.meshObject.addEventListener("click", (event) => {
     planet.motionEngine.increaseSpeed(2);
